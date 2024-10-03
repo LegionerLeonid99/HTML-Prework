@@ -7,79 +7,223 @@
 <!--Style element-->
 
 <style> 
-/*Parallax scrolling example*/
-body{
-    background-color: beige;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-/*Class elements*/
-
-.navigation{
-    background-color: azure;
-    width: 35%;
+/* Body Styles */
+body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: lightgrey;
+        }
+/*Navigation styles*/
+.navigation>ul{
+    background-color: grey;
+    width: 55%;
     margin-left: 25%;
-    
+    padding: 10px;
+    border-radius: 5px;
+}
+.navigation li{
+    margin-left: 25%;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkgreen;
+}
+audio{
+    margin-left: 25%;
+}
+h2{
+    color: navy;
+    font-size: 30px;
+    margin-left: 20%;
+}
+p
+{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+.navigation li{ font-size: small; text-decoration: none;}
+
+.navigation h3{ 
+    font-size: 20px;
+    margin-left: 15%;
+}
+/* Qualifications Styles */
+.qualificaitons ol,li {
+    background-color: grey;
+    width: 55%;
+    margin-left: 25%;    
+    font-size: small;
+    border-radius: 5px;
+    padding: 10px;
+}
+/* Interests styles */
+.interests{
+    background-color: darkgrey;
+    margin-left: 25%;
+    margin-right: 2%;
+    margin-bottom: 20%;
+    width: 57%;
 }
 
+.interests tr{
+    background-color: teal;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    padding: 10%;
+    width: 55%
+}
+.interests caption{
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    margin-left: 2%
+}
+/* Website links styles*/
+.links {
+    margin-left: 25;
+    width: 55%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    text-wrap: nowrap;
+}
+
+.links a{
+    margin: 25%;
+    }
+
+.links h5{
+    margin-left: 65%;
+    font-size: x-large;
+    }
+
+/* Contact Form Styles */
+
+.contactMe {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactMe h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactForm label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#contactForm textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#contactForm input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contactForm input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .contactMe {
+        padding: 15px;
+    }
+
+    #contactForm input[type="submit"] {
+        width: 100%;
+    }
+
+/* Contact information styles */
+
+.contactInfo p{
+    background: white;
+}
+}
 </style>
+
+
     <title>My profile page</title>
     <h1>My Name is Dani, A.K.A Mr.O! Welcome to my profile page!</h1>
     
     <img src="Profile.jpg" alt="Picture of me with sunglasses"> 
    
-    <p>Go ahead and try the audio!</p>
+    <h2>Go ahead and try the audio!</h2>
    
     <audio controls src="1.02 - Aria of the Soul.flac"></audio>
 
-    <nav class="navigation">
+    <nav class="navigation"> 
         <ul>
+            <h3>Navigation links</h3>
             <li><a href="#qualificaitons">Qualificaitons</a></li>
             <li><a href="#interests">Interests</a></li>
             <li><a href="#links">Website links</a></li>
             <li><a href="#contactForm">Contact Form</a></li>
         </ul>
+    </nav>
 </head>
 <body>
-    <section alt="A list with my qualificaitons" class="qualificaitons">
-
+<div class="qualificaitons">
+    <section>
         <ol>
-            My qualificaitons:
-        
+            <h4>My qualificaitons:</h4>
             <li>BTEC IT Level 2 - Distinction Star</li>
             <li>BTEC IT Level 3 - Triple Distinction</li>
         </ol>
     </section>
-
-    <section class="interests">
-        <table>      
-            <caption>Top 4 interests</caption>  
-            <td>1: <tc>Music: Hard Rock, Classic, Alternative, etc</tc>.</td>
-            <td>2: <tc>Audio equipment</tc> </td>
-            <td>3: <tc>Gaming (not e-sports)</tc></td>
-            <td>4: <tc>Weightlifting</tc></td>
-        </table>
+    </div>
+<div class="interests">   
+    <section>
+    <table>      
+        <caption>Top 4 interests</caption>  
+        <td>1: <tc>Music: Hard Rock, Classic, Alternative, etc</tc>.</td>
+        <td>2: <tc>Audio equipment</tc> </td>
+        <td>3: <tc>Gaming (not e-sports)</tc></td>
+        <td>4: <tc>Weightlifting</tc></td>
+    </table>
     </section>
-
+</div>
     <footer>
-    <section class="links">
-    <label for="Website links">    
-        <a href="https://www.cardiff.ac.uk/">Cardiff Uni Website</a>
-        <a href="https://www.cardiff.ac.uk/computer-science#:~:text=School%20of%20Computer%20Science%20and%20Informatics.%20About%20us.%20Courses.%20Research.">COMSC Website</a>
-    </label> 
-    </section>
-    <label for="Contact Information">        
-        <h3>Contact Information</h3>
-        <p>Email: dan-osa2003@hotmail.com</p>
-        <p>Github: https://github.com/LegionerLeonid99</p>
-        <p>Instagram: @leonid_legioner</p>
-    </label>
+    
 
-    <section class="contactForm">
+
+    <div class="contactMe">
+    <section>
         <h2>Contact Me</h2>
-        <form action="#" method="post">
+        <form id="contactForm" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -95,7 +239,25 @@ body{
             <input type="submit" value="Send Message">
         </form>
     </section>
+</div>
 
+<div class="contactInfo">
+    <section>
+    <label for="Contact Information">        
+        <h3>Contact Information</h3>
+        <p>Email: dan-osa2003@hotmail.com</p>
+        <p>Github: https://github.com/LegionerLeonid99</p>
+        <p>Instagram: @leonid_legioner</p>
+    </label>
+    </section>
+</div>
+<div class="links">
+    <section>
+        <h5>University Links:</h5>
+        <a href="https://www.cardiff.ac.uk/">Cardiff Uni Website</a>
+        <a href="https://www.cardiff.ac.uk/computer-science#:~:text=School%20of%20Computer%20Science%20and%20Informatics.%20About%20us.%20Courses.%20Research.">COMSC Website</a>
+    </section>
+</div>
     </footer>
 </body>
 </html>
