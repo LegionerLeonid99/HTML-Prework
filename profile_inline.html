@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My profile page</title>
-    <h1>My Name is Dani, A.K.A Mr.O! Welcome to my profile page!</h1>
-    <img src="Profile.jpg" alt="Picture of me with sunglasses"> 
-    <p>Go ahead and try the audio!</p>
+    <h1 style="color: chocolate; border: 5px; ">My Name is Dani, A.K.A Mr.O! Welcome to my profile page!</h1>
+    <img src="Profile.jpg" alt="Picture of me with sunglasses" style="height: 100px; width: 100px;"> 
+    <p style=" font-size: 20px;">Go ahead and try the audio!</p>  
     <audio controls src="1.02 - Aria of the Soul.flac"></audio>
 
     <nav>
-        <ul>
-            <li><a href="#qualificaitons">Qualificaitons</a></li>
-            <li><a href="#interests">Interests</a></li>
-            <li><a href="#links">Website links</a></li>
-            <li><a href="#contactForm">Contact Form</a></li>
+        <ul style="color: grey; background-color: darkorange; border-radius: 10px; padding:20px; width: 300px; margin-left: 100px;">
+            <li style="color: red; font-style: italic;"><a href="#qualificaitons">Qualificaitons</a></li>
+            <li style="color: green; font-style: italic;"><a href="#interests">Interests</a></li>
+            <li style="color: blueviolet; font-style: italic;"><a href="#links">Website links</a></li>
+            <li style="color: blue; font-style: italic;"><a href="#contactForm">Contact Form</a></li>
         </ul>
 </head>
-<body>
+<body style="background-color: beige;">
     <section alt="A list with my qualificaitons" id="qualificaitons">
 
-        <ol>
+        <ol style=" background-color: grey; border-radius: 10px; padding: 20px; margin-left: 200px; width: 300px;">
             My qualificaitons:
         
             <li>BTEC IT Level 2 - Distinction Star</li>
@@ -28,9 +28,9 @@
         </ol>
     </section>
 
-    <section id="interests">
-        <table>      
-            <caption>Top 4 interests</caption>  
+    <section id="interests" style="margin-bottom: 10px;"> 
+        <table style="padding: 15px; font-family: Georgia, 'Times New Roman', Times, serif;  font-weight: 100;">      
+            <caption style="font-size: 30px; font-weight: bold;">Top 4 interests</caption>  
             <td>1: <tc>Music: Hard Rock, Classic, Alternative, etc</tc>.</td>
             <td>2: <tc>Audio equipment</tc> </td>
             <td>3: <tc>Gaming (not e-sports)</tc></td>
@@ -55,16 +55,16 @@
     <section id="contactForm">
         <h2>Contact Me</h2>
         <form action="#" method="post">
-            <label for="name">Name:</label>
+            <label for="name" style="margin: auto;">Name:</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
+            <label for="email" style="margin: auto;">Email:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="subject">Subject:</label>
+            <label for="subject" style="margin: auto;">Subject:</label>
             <input type="text" id="subject" name="subject" required>
 
-            <label for="message">Message:</label>
+            <label for="message" style="margin: auto;">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
 
             <input type="submit" value="Send Message">
